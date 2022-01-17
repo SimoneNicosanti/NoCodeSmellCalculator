@@ -17,10 +17,12 @@ public class HelloController {
     @FXML private TextField partialTextField ;
     @FXML private TextField resultTextField ;
 
+    private static final String NOT_RESULT_CONSTANT = "NOT_RESULT" ;
+
 
     private String firstOperand = "";
     private String secondOperand = "";
-    private String currentResult = "NOT_RESULT" ;
+    private String currentResult = NOT_RESULT_CONSTANT ;
     private Button requestedOperation ;
 
 
@@ -43,7 +45,7 @@ public class HelloController {
     public void onOperationButtonClicked(ActionEvent event) {
         Button operation = (Button) event.getSource() ;
         if (requestedOperation == null) {
-            if (currentResult.compareTo("NOT_RESULT") != 0 && firstOperand.isEmpty()) {
+            if (currentResult.compareTo(NOT_RESULT_CONSTANT) != 0 && firstOperand.isEmpty()) {
                 firstOperand = currentResult ;
             }
             requestedOperation = operation ;
@@ -59,7 +61,7 @@ public class HelloController {
     public void onClearButtonClicked() {
         firstOperand = "" ;
         secondOperand = "" ;
-        currentResult = "NOT_RESULT" ;
+        currentResult = NOT_RESULT_CONSTANT ;
         partialTextField.setText("");
         resultTextField.setText("");
         requestedOperation = null ;

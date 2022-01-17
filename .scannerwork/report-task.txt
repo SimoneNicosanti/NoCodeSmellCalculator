@@ -1,7 +1,0 @@
-organization=simonenicosanti
-projectKey=SimoneNicosanti_NoCodeSmellCalculator
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.26091
-dashboardUrl=https://sonarcloud.io/dashboard?id=SimoneNicosanti_NoCodeSmellCalculator
-ceTaskId=AX5oLYCDZjhUBOzmDTpP
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX5oLYCDZjhUBOzmDTpP
